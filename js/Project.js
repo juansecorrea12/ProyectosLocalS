@@ -13,7 +13,7 @@ export default class Project {
         let show = document.getElementById('info-projects');
         const projectMap = datos.map(() => {
             return `
-            <div class="col-md-4">
+            <div class="col-md-4 mb-3">
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
                         <h5 class="card-title">Nombre del Proyecto: ${this.nombre}</h5>
