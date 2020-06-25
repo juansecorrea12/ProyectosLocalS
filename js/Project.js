@@ -16,10 +16,10 @@ export default class Project {
             <div class="col-md-4">
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
-                        <h5 class="card-title">${this.nombre}</h5>
-                        <span style="font-style: italic; letter-spacing: 2px;">${this.empresaCargo}</span>
-                        <p class="card-text">${this.descripcion}</p>
-                        <strong>${this.tiempoDesarrollo}</strong>
+                        <h5 class="card-title">Nombre del Proyecto: ${this.nombre}</h5>
+                        <span style="font-style: italic; letter-spacing: 2px;">Empresa a cargo: ${this.empresaCargo}</span>
+                        <p class="card-text">Descripción: ${this.descripcion}</p>
+                        <strong>Tiempo Estimado: ${this.tiempoDesarrollo} meses</strong>
                     </div>
                 </div>
             </div>
