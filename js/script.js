@@ -21,6 +21,14 @@ idForm.addEventListener('submit', () => {
     // Utilizar el metodo de mostrar por cada proyecto agregado
     project.showProject(projects);
 
+    cleanSpaces();
     console.log(projects);
 
 })
+
+function cleanSpaces() {
+    nombreProyecto.value = '';
+    tiempoProyecto.value = '';
+    descripcionProyecto.value = '';
+    empresaProyecto.value = 'Selecciona una';
+}
