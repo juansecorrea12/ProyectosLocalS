@@ -1,18 +1,18 @@
-'use strict'
+"use strict";
 
 export default class Project {
-    constructor(id, nombre, tiempoDesarrollo, descripcion, empresaCargo) {
-        this.id = id;
-        this.nombre = nombre;
-        this.tiempoDesarrollo = tiempoDesarrollo;
-        this.descripcion = descripcion;
-        this.empresaCargo = empresaCargo;
-    }
+  constructor(id, nombre, tiempoDesarrollo, descripcion, empresaCargo) {
+    this.id = id;
+    this.nombre = nombre;
+    this.tiempoDesarrollo = tiempoDesarrollo;
+    this.descripcion = descripcion;
+    this.empresaCargo = empresaCargo;
+  }
 
-    showProject(datos) {
-        let show = document.getElementById('info-projects');
-        const projectMap = datos.map(() => {
-            return `
+  showProject(datos) {
+    let show = document.getElementById("info-projects");
+    const projectMap = datos.map(() => {
+      return `
             <div class="col-md-4 mb-3">
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
@@ -24,9 +24,8 @@ export default class Project {
                 </div>
             </div>
         `;
-        })
-        const showAll = projectMap.join("");
-        show.innerHTML += showAll;
-    }
-
+    });
+    const showAll = projectMap.join("");
+    show.innerHTML += showAll;
+  }
 }
